@@ -30,6 +30,9 @@ eicar.tar             | detected     | OK
 eicar.tar.bz2         | detected     | OK
 eicar.tar.gz          | detected     | OK
 eicar.tar.xz          | detected     | OK
+eicar.tbz             | detected     | OK
+eicar.tgz             | detected     | OK
+eicar.txz             | detected     | OK
 
 Testing the CLAMAV virus checker
 --------------------------------
@@ -45,3 +48,9 @@ eicar-200m.txt        | not detected | bad
 eicar+200m.txt        | not detected | bad
 eicar.zip             | detected     | OK
 eicar.tar             | detected     | OK
+eicar.tar.bz2         | detected     | OK
+eicar.tar.gz          | detected     | OK
+eicar.tar.xz          | detected     | OK
+eicar.tbz             | detected     | OK
+eicar.tgz             | detected     | OK
+eicar.txz             | detected     | OK
