@@ -8,6 +8,11 @@ be detected as files containing viruses by your virus checker but they
 will not do any harm to your system - unless someone hacked this repo
 and modified the creation script, so use on your own risk!
 
+Below, you find the results of some of my tests.
+Basically, I expect that the virus checkers see the existance
+of the eicar file in all of the files so I expect them to detect
+a virus. Unfortunately, the results are mixed.
+
 Testing virustotal.com
 ----------------------
 
