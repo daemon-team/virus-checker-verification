@@ -43,3 +43,6 @@ echo "Creating eicar+200m.txt"
     dd bs=1024k seek=200 count=1 of=eicar+200m.txt if=/dev/zero >/dev/null 2>&1
     echo "${EICAR}" >>eicar+200m.txt
 }
+
+echo "Creating eicar.zip"
+zip -q -r eicar.zip eicar.txt

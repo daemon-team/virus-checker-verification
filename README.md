@@ -25,6 +25,7 @@ eicar+1k.txt          | detected     | OK
 eicar-middle-2k.txt   | detected     | OK
 eicar-200m.txt        | detected     | OK
 eicar+200m.txt        | not detected | bad
+eicar.zip             | detected     | OK
 
 Testing the CLAMAV virus checker
 --------------------------------
@@ -38,3 +39,4 @@ eicar+1k.txt          | not detected | bad
 eicar-middle-2k.txt   | not detected | bad
 eicar-200m.txt        | not detected | bad
 eicar+200m.txt        | not detected | bad
+eicar.zip             | detected     | OK
