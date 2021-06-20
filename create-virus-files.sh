@@ -67,3 +67,8 @@ cp eicar.tar.gz eicar.tgz
 
 echo "Creating eicar.txz"
 cp eicar.tar.xz eicar.txz
+
+echo "Creating eicar-hidden.zip"
+zip -q -r tmp.zip LICENSE
+cat eicar.txt tmp.zip >eicar-hidden.zip
+rm tmp.zip
