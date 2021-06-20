@@ -46,3 +46,15 @@ echo "Creating eicar+200m.txt"
 
 echo "Creating eicar.zip"
 zip -q -r eicar.zip eicar.txt
+
+echo "Creating eicar.tar"
+tar cf eicar.tar eicar.txt
+
+echo "Creating eicar.tar.gz"
+gzip -c9 eicar.tar >eicar.tar.gz
+
+echo "Creating eicar.tar.bz2"
+bzip2 -c9 eicar.tar >eicar.tar.bz2
+
+echo "Creating eicar.tar.xz"
+xz -c9 eicar.tar >eicar.tar.xz
