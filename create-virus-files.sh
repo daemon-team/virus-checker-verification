@@ -72,3 +72,11 @@ echo "Creating eicar-hidden.zip"
 zip -q -r tmp.zip LICENSE
 cat eicar.txt tmp.zip >eicar-hidden.zip
 rm tmp.zip
+
+echo "Creating eicar-nested.tar.xz"
+cp eicar.tar eicar-nested.tar
+for i in $(seq 1 1000); do
+    tar cf eicar-nested-plus1.tar eicar-nested.tar
+    mv eicar-nested-plus1.tar eicar-nested.tar
+done
+xz -9 eicar-nested.tar

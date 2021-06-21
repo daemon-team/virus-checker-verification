@@ -32,6 +32,7 @@ These are the files:
 * eicar.tgz: A compressed tar file containing the virus file
 * eicar.txz: A compressed tar file containing the virus file
 * eicar-hidden.zip: A zip file prepended by the virus file
+* eicar-nested.tar.xz: A compressed tar file containing a tar file containing a tar file ...
 
 Testing virustotal.com
 ----------------------
@@ -54,6 +55,7 @@ eicar.tbz             | detected     | OK
 eicar.tgz             | detected     | OK
 eicar.txz             | detected     | OK
 eicar-hidden.zip      | detected     | OK
+eicar-nested.tar.xz   | detected     | OK
 
 Testing the CLAMAV virus checker
 --------------------------------
@@ -76,3 +78,4 @@ eicar.tbz             | detected     | OK
 eicar.tgz             | detected     | OK
 eicar.txz             | detected     | OK
 eicar-hidden.zip      | not detected | bad
+eicar-nested.tar.xz   | not detected | bad
