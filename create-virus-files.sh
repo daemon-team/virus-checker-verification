@@ -2,6 +2,13 @@
 
 EICAR='X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*'
 
+FOLDER="$(git describe --tags)"
+mkdir "${FOLDER}"
+cp LICENSE "${FOLDER}"
+(
+cd "${FOLDER}"
+    
+    
 echo "Creating eicar.txt"
 echo "${EICAR}" >eicar.txt
 
@@ -80,3 +87,4 @@ for i in $(seq 1 1000); do
     mv eicar-nested-plus1.tar eicar-nested.tar
 done
 xz -9 eicar-nested.tar
+)
